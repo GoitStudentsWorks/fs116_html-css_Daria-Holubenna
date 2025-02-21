@@ -1,0 +1,124 @@
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.mobmenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #576f35;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 296px;
+  justify-content: space-between;
+}
+
+.mobmenu.active {
+  display: flex;
+}
+
+.mobmenu-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.mobmenu-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 118px;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobmenu-item {
+  width: 118px;
+  height: 44px;
+}
+
+.mobmenu-link {
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  width: 118px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+
+.mobmenu-link:hover,
+.mobmenu-link:focus,
+.mobmenu-link.active {
+  background: white;
+  color: #7a3145;
+}
+
+.mobmenu-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.mmf-btn {
+  background: #7a3145;
+  color: white;
+  border: none;
+  width: 175px;
+  height: 52px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.mmf-btn:hover,
+.mmf-btn:focus {
+  background: white;
+  color: #7a3145;
+  border: 2px solid #7a3145;
+}
+
+@media (min-width: 768px) {
+  .mobmenu {
+    width: 351px;
+    height: 100vh;
+    right: 0;
+    padding-top: 360px;
+  }
+
+  .mobmenu.active {
+    right: 0;
+  }
+
+  .mobmenu-close-btn {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+  }
+}
