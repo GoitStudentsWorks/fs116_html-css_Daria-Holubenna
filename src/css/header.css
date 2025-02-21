@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding-top: 20px;
 
   padding-bottom: 20px; /* DELETE */
@@ -15,11 +16,6 @@
   gap: 4px;
 }
 
-.header-logo-green-harvest {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
 .header-icons-logo,
 .header-logo-green,
 .header-icon-burger-menu {
@@ -43,6 +39,10 @@
   }
   .header-logo-green-harvest {
     gap: 9px;
+  }
+  .header-logo {
+    width: 188px;
+    height: 17px;
   }
   .header-icons-logo {
     width: 20px;
