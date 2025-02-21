@@ -104,6 +104,9 @@ textarea {
   background-color: #7a3145;
   margin: 0 auto;
   display: block;
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    padding: 16px 100px;
+  }
 }
 
 .order-form-btn:active {
@@ -130,6 +133,8 @@ textarea {
 .order-card-list {
   display: flex;
   flex-wrap: wrap;
+
+  align-items: baseline;
   gap: 12px;
 }
 .order-card-link {
@@ -139,6 +144,7 @@ textarea {
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  padding: 12px 0;
 }
 .order-card-item.is-cureent::after {
   content: '/';
