@@ -53,7 +53,7 @@
 .order-form-input {
   border: 1px solid #858585;
   border-radius: 30px;
-  padding: 14px;
+  padding: 14px 16px;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -81,7 +81,7 @@ textarea {
 .order-form-textarea {
   border: 1px solid #858585;
   border-radius: 15px;
-  padding: 14px;
+  padding: 16px;
   width: 100%;
   height: 92px;
   margin-bottom: 20px;
@@ -138,7 +138,7 @@ textarea {
   flex-wrap: wrap;
 
   align-items: baseline;
-  gap: 12px;
+  gap: 8px;
 }
 .order-card-link {
   font-weight: 600;
@@ -147,13 +147,12 @@ textarea {
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  padding: 12px 0;
 }
 .order-card-item.is-cureent::after {
   content: '/';
   font-size: 18px;
   font-weight: 600;
-  padding-left: 12px;
+  padding-left: 8px;
   color: #fbfbfb;
 }
 @media screen and (min-width: 768px) {
@@ -176,6 +175,12 @@ textarea {
   .container-card {
     gap: 32px;
   }
+  .order-card-list {
+    gap: 12px;
+  }
+  .order-card-item.is-cureent::after {
+    padding-left: 12px;
+  }
   .order-form-container {
     padding: 72px 100px;
   }
@@ -193,12 +198,12 @@ textarea {
     line-height: 1.25;
   }
   .order-form-textarea {
-    padding: 16px;
+    padding: 16px 15px;
 
     margin-bottom: 24px;
   }
   .order-form-btn {
-    padding: 16px 191px;
+    padding: 16px 197px;
   }
   .order-card-container {
     padding: 52px;
@@ -226,6 +231,9 @@ textarea {
   }
   .order-form-text {
     max-width: 428px;
+  }
+  .order-form-btn {
+    padding: 16px 191px;
   }
   .order-form-btn:hover,
   .order-form-btn:focus {
