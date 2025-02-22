@@ -27,8 +27,6 @@
 .reviews-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
-  list-style: none;
 }
 .reviews-item {
   width: 100%;
@@ -36,12 +34,12 @@
   border: 1px solid #d4bfc4;
   border-radius: 24px;
   padding: 20px 16px;
+  text-align: center;
 }
 .reviews-img {
   border-radius: 100%;
+  margin: 0 auto;
   margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .reviews-name {
   font-weight: 600;
@@ -50,14 +48,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
 
-  margin-bottom: 24px;
-  text-align: center;
+  margin-bottom: 8px;
 }
 .reviews-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  text-align: center;
   color: #858585;
 }
 .reviews-item:nth-child(n + 2) {
