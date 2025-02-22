@@ -1,36 +1,67 @@
-<section class="section section-how-it-works">
+<section id="#howitworks" class="section section-how-it-works">
   <div class="container container-how-it">
     <h2 class="visually-hidden">How it works</h2>
-    <div class="section-image-how">
-      <img
-        src="./img/how-it-works/imagemob@1x.webp"
-        alt="Vegetarianism"
-        width="100%"
-      />
+    <div class="content-image-how">
+      <picture>
+        <source
+          srcset="
+            /img/how-it-works/Rectangle_page@1x.webp 1x,
+            /img/how-it-works/Rectangle_page@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            /img/how-it-works/imagetab@1x.webp 1x,
+            /img/how-it-works/imagetab@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /img/how-it-works/imagemob@1x.webp 1x,
+            /img/how-it-works/imagemob@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="/img/how-it-works/imagemob@1x.webp"
+          alt="vegetarian woman"
+          class="how-image-woman"
+          width="375px"
+          height="572px"
+        />
+      </picture>
     </div>
     <div class="content-how-wrap">
-      <h3 class="h-three-how">
-        To order your <span class="how-title-span">vegetable</span> basket,
+      <h3 class="how-title">
+        To order your <span class="how-title-work">vegetable</span> basket,
         simply follow these
-        <span class="how-title-span">easy steps</span>
+        <span class="how-title-work">easy steps</span>
       </h3>
-      <p class="p-how">
+      <p class="how-text">
         Our baskets are assembled with care and delivered straight to your
         doorstep, so you can enjoy the taste of fresh fruit without ever leaving
         your home.
       </p>
-      <ol class="ol-how-list">
-        <li class="li-how-item">
-          Just choose <span class="how-item-span">the vegetable</span> you want
-          to order by clicking on the checkboxes
-          <span class="how-item-span">next to it.</span>
+      <ol class="how-list">
+        <li class="how-item">
+          <p class="how-item-text">
+            Just choose <span class="how-item-card">the vegetable</span> you
+            want to order by clicking on the checkboxes
+            <span class="how-item-card">next to it.</span>
+          </p>
         </li>
-        <li class="li-how-item">
-          Click on <span>the basket</span> and fill out the form.
+        <li class="how-item">
+          <p class="how-item-text">
+            Click on <span>the basket</span> and fill out the form.
+          </p>
         </li>
-        <li class="li-how-item">
-          Sit back and relax! Your <span>fresh vegetables</span> basket will be
-          delivered.
+        <li class="how-item">
+          <p class="how-item-text">
+            Sit back and relax! Your <span>fresh vegetables</span> basket will
+            be delivered.
+          </p>
         </li>
       </ol>
     </div>

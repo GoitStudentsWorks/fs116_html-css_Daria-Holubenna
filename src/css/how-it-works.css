@@ -1,22 +1,94 @@
 .section-how-it-works {
+  padding: 80px;
 }
 .container-how-it {
+  background-color: #7a3145;
 }
-.visually-hidden {
+
+.content-image-how {
+  background-color: #7a3145;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.section-image-how {
+.how-image-woman {
+  border-radius: 30px;
+  width: 335px;
 }
 .content-how-wrap {
+  background-color: #576f35;
+  width: 100%;
 }
-.h-three-how {
+.how-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-.how-title-span {
+.how-title-work {
+  color: #d4bfc4;
 }
-.p-how {
+.how-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fbfbfb;
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.ol-how-list {
+.how-list {
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
-.li-how-item {
+.how-item {
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  width: 100%;
 }
-.how-item-span {
+.how-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #7a3145;
 }
+.how-item-card {
+}
+@media screen and (min-width: 768px) {
+  .container-how-it {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-how-it {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    gap: 100px;
+  }
+  .section-how-it-works {
+  }
+}
+
+/* mobile: верстка гумова від 320px, стає адаптивною з 375px;
+
+tablet: з 768px;
+
+desktop: з 1280px " */
