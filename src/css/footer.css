@@ -22,6 +22,11 @@
     /* max-width: 227px; */
     gap: 14px;
 }
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
 .footer-nav-list {
     display: flex;
     flex-direction: column;
@@ -89,9 +94,12 @@ margin: 80px 0 0;
 .footer {
     padding: 32px;
 }
+.footer-logo {
+    gap: 8.89px;
+}
 .footer-text {
     margin-top: 24px;
-font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.25em;
     max-width: 265px;
