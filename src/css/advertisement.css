@@ -11,7 +11,6 @@
   background-color: #576f35;
   border-radius: 12px;
   display: inline-block;
-  padding-left: 5px;
 }
 @media screen and (min-width: 768px) {
   .advertisement-text {
@@ -21,6 +20,7 @@
   .advertisement-span {
     padding-right: 12px;
     padding-top: 20px;
+    padding-bottom: 4px;
   }
 }
 @media screen and (min-width: 1280px) {
