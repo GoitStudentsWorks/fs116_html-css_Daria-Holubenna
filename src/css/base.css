@@ -56,6 +56,13 @@ main {
   }
 }
 
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
