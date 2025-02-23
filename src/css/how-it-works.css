@@ -1,13 +1,6 @@
 /* how it work */
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .how-work-container {
-  min-width: 320px;
-  max-width: 375px;
+  padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -42,9 +35,10 @@ ol {
 }
 .how-work-text {
   width: 335px;
-  font-weight: 500;
+
   font-size: 14px;
-  line-height: 1.25;
+
+  line-height: 1.43;
   color: #fbfbfb;
   margin-bottom: 40px;
 }
@@ -58,11 +52,10 @@ ol {
   counter-reset: step-counter;
 }
 .how-work-item {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #858585;
-  height: 76px;
+
   width: 100%;
 
   border-radius: 15px;
@@ -120,6 +113,7 @@ ol {
   }
   .how-work-text {
     width: 440px;
+    line-height: 1.25;
     font-size: 16px;
     margin-bottom: 52px;
   }
@@ -127,6 +121,7 @@ ol {
     gap: 24px;
   }
   .how-work-item {
+    line-height: 1.25;
     font-size: 16px;
     padding: 18px 15px 18px 100px;
   }
