@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.mobmenu {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-.mobmenu.active {
+.modal.is-open {
   display: flex;
 }
 
@@ -111,7 +111,7 @@
     padding-top: 360px;
   }
 
-  .mobmenu.active {
+  .mobmenu.is-open {
     right: 0;
   }
 
