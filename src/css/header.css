@@ -1,13 +1,18 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20px);
+  z-index: 2;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-top: 20px;
-
-  padding-bottom: 20px; /* DELETE */
   margin: 0 auto;
-  background-color: #576f35; /* DELETE */
+  background-color: transparent;
 }
 .header-logo-green-harvest {
   padding: 8px 0;
@@ -21,7 +26,7 @@
 }
 
 .header-nav {
-  display: none;=
+  display: none;
 }
 
 .header-btn {
@@ -32,9 +37,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header-container {
-    padding-top: 32px;
+  .header {
+    transform: translateY(32px);
   }
+
   .header-logo-green-harvest {
     padding: 10px 0;
     gap: 9px;
@@ -83,13 +89,14 @@
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-link:hover,
   .header-link:focus {
     background: #d4bfc4;
     color: #7a3145;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-link:active {
@@ -110,13 +117,14 @@
     line-height: 1.1;
     letter-spacing: -0.01em;
     color: #fbfbfb;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-shop:hover,
   .header-shop:focus {
     background: #d4bfc4;
     color: #7a3145;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-shop:active {
