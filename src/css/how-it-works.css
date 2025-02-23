@@ -1,153 +1,154 @@
-.section-how-it-works {
-  background-color: #7a3145;
+/* how it work */
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.content-how-wrap {
-  background-color: #576f35;
-  width: 100%;
-}
-
-.wrapp {
+.how-work-container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-
-.section-how-it-works {
-  width: 100%;
-}
-
-.random {
+.how-work-img {
+  background-color: #7a3145;
   padding: 40px 20px;
-  display: block;
+  width: 375px;
 }
-
-.how-image-woman {
-  /* width: 440px; */
-  /* height: auto; */
+.how-img {
   border-radius: 30px;
 }
 
-.how-title {
+.how-work-wrap {
+  background-color: #576f35;
+  padding: 80px 20px;
+
+  width: 375px;
+}
+.how-work-title {
+  width: 335px;
   font-weight: 600;
-  line-height: 100%;
+  font-size: 28px;
+  line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  font-size: 28px;
   margin-bottom: 20px;
 }
-
-.how-text {
+.how-title-span {
+  color: #d4bfc4;
+}
+.how-work-text {
+  width: 335px;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 1.25;
   color: #fbfbfb;
-}
-
-.how-item {
-  border-radius: 15px;
-  max-width: 335px;
-  min-height: 84px;
-  background-color: #fbfbfb;
-}
-
-.how-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.how-item-text {
-  font-size: 14px;
-  line-height: 143%;
-  color: #858585;
-  padding: 12px 17px 12px 24px;
-}
-
-.wrapp-text {
   margin-bottom: 40px;
 }
+.how-work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-@media (min-width: 768px) {
-  .how-image-woman {
-    width: 640px;
-    height: auto;
+  align-items: center;
+
+  counter-reset: step-counter;
+}
+.how-work-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #858585;
+  height: 76px;
+  width: 100%;
+
+  border-radius: 15px;
+
+  background: #fbfbfb;
+  padding: 12px 27px 12px 100px;
+
+  counter-increment: step-counter;
+  position: relative;
+}
+.how-work-item:nth-child(2) {
+  padding: 18px 27px 18px 100px;
+}
+.how-work-item::before {
+  content: counter(step-counter) '';
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-weight: 600;
+  color: #fbfbfb;
+  font-size: 18px;
+  background-color: #7a3145;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 5px solid #d4bfc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-item-span {
+  font-weight: 700;
+  color: #141414;
+}
+@media only screen and (min-width: 768px) {
+  .how-work-container {
+    max-width: 768px;
     margin: 0 auto;
   }
-
-  .random {
+  .how-work-img {
+    width: 768px;
     padding: 100px 64px;
-    display: block;
   }
 
-  .test-random {
-    max-width: 440px;
-    margin: 0 auto;
-    padding: 100px 0;
+  .how-work-wrap {
+    padding: 100px 164px;
+    width: 768px;
   }
-
-  .how-title {
+  .how-work-title {
+    width: 440px;
     font-size: 32px;
     margin-bottom: 24px;
   }
-
-  .how-text {
+  .how-work-text {
+    width: 440px;
     font-size: 16px;
-    line-height: 125%;
-    color: #fbfbfb;
-  }
-
-  .how-item {
-    border-radius: 15px;
-    max-width: 440px;
-    min-height: 76px;
-    background-color: #fbfbfb;
-  }
-
-  .how-item:not(:last-child) {
-    margin-bottom: 24px;
-  }
-
-  .how-item-text {
-    font-size: 16px;
-    line-height: 125%;
-    color: #858585;
-    padding: 12px 17px 12px 24px;
-  }
-
-  .wrapp-text {
     margin-bottom: 52px;
   }
+  .how-work-list {
+    gap: 24px;
+  }
+  .how-work-item {
+    font-size: 16px;
+    padding: 18px 15px 18px 100px;
+  }
+  .how-work-item:nth-child(2) {
+    padding: 28px 17px 28px 100px;
+  }
 }
-
-@media (min-width: 1280px) {
-  .wrapp {
-    display: flex;
+@media only screen and (min-width: 1280px) {
+  .how-work-container {
     flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
   }
-
-  .content-how-wrap {
-    width: 50%;
-  }
-
-  .section-how-it-works {
-    width: 50%;
-  }
-
-  .random {
+  .how-work-img {
+    width: 640px;
     padding: 100px;
-    display: block;
   }
-
-  .test-random {
-    padding: 100px 0;
+  .how-work-wrap {
+    padding: 100px;
+    width: 640px;
   }
-
-  .how-image-woman {
-    width: 100%;
-    margin: 0;
-  }
-
-  .wrapp-text {
+  .how-work-text {
     margin-bottom: 104px;
   }
 }
-/* <section class="wrapp">
-  <div id="#howitworks" class="section-how-it-works"> */
