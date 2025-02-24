@@ -1,10 +1,12 @@
 .vegetables {
     background-color: #7A3145;
 }
+
 .wrapp-vegetables-title {
     max-width: 335px;
     margin-bottom: 40px;
 }
+
 .vegetables-tite {
     color: #FBFBFB;
     font-weight: 600;
@@ -13,27 +15,32 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 320px) and (max-width: 375px) {
+        font-size: 46px;
+    }
 }
+
 .vegetables-color-change {
     color: #D4BFC4;
 }
+
 .vegetables-descr {
     font-size: 14px;
     line-height: 143%;
     color: #FBFBFB;
 }
-.vegetables-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-}
+
 .vegetables-card {
     border-radius: 40px;
     background-color: #FBFBFB;
     padding: 32px 24px;
 }
+
+.vegetables-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .vegetables-card-title {
     font-weight: 600;
     font-size: 28px;
@@ -43,6 +50,7 @@
     color: #7A3145;
     margin-bottom: 12px;
 }
+
 .vegetables-price {
     font-size: 14px;
     line-height: 143%;
@@ -50,33 +58,49 @@
     margin-bottom: 12px;
 }
 
+
 @media screen and (min-width: 768px) {
+
     .wrapp-vegetables-title {
         max-width: 626px;
         margin-bottom: 52px;
     }
+
     .vegetables-tite {
         font-size: 64px;
         line-height: 100%;
         margin-bottom: 24px;
     }
+
     .vegetables-descr {
         font-size: 16px;
         line-height: 125%;
     }
+
     .vegetables-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         row-gap: 28px;
         column-gap: 24px;
     }
+
     .vegetables-card {
         width: calc((100% - 24px) / 2);
         padding: 32px 30px;
+
     }
+
+    .vegetables-card:not(:last-child) {
+        margin-bottom: 0;
+    }
+
     .vegetables-price {
         font-size: 16px;
         line-height: 125%;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .vegetables-card {
         width: calc((100% - 48px) / 3);
@@ -86,6 +110,7 @@
     .vegetables-card-title {
         font-size: 32px;
     }
+
     .vegetables-price {
         margin-bottom: 8px;
     }
