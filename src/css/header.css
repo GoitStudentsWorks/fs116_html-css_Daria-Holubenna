@@ -33,10 +33,10 @@
 }
 
 .header-btn {
+  display: flex;
   background: transparent;
   border: none;
   padding: 0;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
