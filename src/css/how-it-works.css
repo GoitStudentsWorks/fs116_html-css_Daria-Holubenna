@@ -1,7 +1,6 @@
 /* how it work */
 .how-work-container {
   padding: 0;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -92,6 +91,25 @@
   font-weight: 700;
   color: #141414;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .how-work-img {
+    width: auto;
+  }
+
+  .how-work-wrap {
+    width: auto;
+  }
+
+  .how-work-title {
+    width: auto;
+  }
+
+  .how-work-text {
+    width: auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .how-work-container {
     max-width: 768px;
