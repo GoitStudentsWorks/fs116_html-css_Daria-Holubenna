@@ -2,9 +2,6 @@
     background-color: #7A3145;
     padding: 40px 0px;
 }
-.footer-logo-container {
-    margin-bottom: 40px;
-}
 .footer-logo-text {
     margin-bottom: 80px;
 }
@@ -119,8 +116,12 @@
     }
   .footer-logo {
         display: flex;
-        gap: 9px;
         margin-bottom: 24px;
+    }
+    .footer-logo-link {
+        width: 216px;
+        height: 20px;
+        gap: 9px;
     }
         .footer-text {
         font-size: 16px;
