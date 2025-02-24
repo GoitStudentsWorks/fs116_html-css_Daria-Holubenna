@@ -1,0 +1,123 @@
+.hero {
+  background-color: #576f35;
+  padding-top: 100px;
+}
+
+.hero-conteiner {
+  padding: 0;
+}
+
+.hero-wrap {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 320px) and (max-width: 375px) {
+    font-size: 46px;
+  }
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+
+.hero-img {
+  background-image: url(/img/hero/hero–mobile/img-1-mobile.webp);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  max-width: 375px;
+  height: 372px;
+
+  @media screen and (min-resolution: 2x) {
+    background-image: url(/img/hero/hero–mobile/img-1-mobile@2x.webp);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-conteiner {
+    padding: 0;
+  }
+
+  .hero-wrap {
+    padding: 0 32px;
+    margin-bottom: 52px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    margin-bottom: 24px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .hero-img {
+    background-image: url(/img/hero/hero–tablet/img-1-tablet.webp);
+
+    max-width: 768px;
+    height: 536px;
+
+    @media screen and (min-resolution: 2x) {
+      background-image: url(/img/hero/hero–tablet/img-1-tablet@2x.webp);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-wrap {
+    width: 640px;
+    margin-top: auto;
+
+    padding-left: 100px;
+    padding-right: 38px;
+  }
+
+  .hero-title {
+    margin-bottom: 128px;
+  }
+
+  .hero-text {
+    max-width: 472px;
+  }
+
+  .hero-img {
+    background-image: url(/img/hero/hero–desktop/img-1-desktop.webp);
+    background-position: right;
+    width: 640px;
+    height: 796px;
+
+    @media screen and (min-resolution: 2x) {
+      background-image: url(/img/hero/hero–desktop/img-1-desktop@2x.webp);
+    }
+  }
+}
