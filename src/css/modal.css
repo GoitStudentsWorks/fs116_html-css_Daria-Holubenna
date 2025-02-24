@@ -1,124 +1,140 @@
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 10;
 }
 
 .modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #576f35;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 296px;
-  justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #576f35;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 296px;
+    justify-content: space-between;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .modal.is-open {
-  display: flex;
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .mobmenu-close-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+}
+
+.mobmenu-close-icon {
+stroke: #fbfbfb;
 }
 
 .mobmenu-list {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 118px;
-  height: 180px;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    justify-content: center;
+    align-items: center;
 }
 
-.mobmenu-item {
-  width: 118px;
-  height: 44px;
-}
+
 
 .mobmenu-link {
-  text-decoration: none;
-  background: transparent;
-  color: white;
-  width: 118px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  border: 1px solid white;
+   background: transparent;
+    color: #fbfbfb;
+    width: 118px;
+    height: 44px;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.43;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #fbfbfb;
 }
 
 .mobmenu-link:hover,
 .mobmenu-link:focus,
 .mobmenu-link.active {
-  background: white;
-  color: #7a3145;
+    background-color: #fbfbfb;
+    color: #7a3145;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobmenu-footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  position: absolute;
-  bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     position: absolute;
+    bottom: 52px;
 }
 
 .mmf-btn {
-  background: #7a3145;
-  color: white;
-  border: none;
-  width: 175px;
-  height: 52px;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
-}
+    background-color: #7a3145;
+    color: #fbfbfb;
+    border: none;
+    padding: 16px 41px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+   }
 
 .mmf-btn:hover,
 .mmf-btn:focus {
-  background: white;
-  color: #7a3145;
-  border: 2px solid #7a3145;
+    background-color: #fbfbfb;
+    color: #7a3145;
+    border: 2px solid #7a3145;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 768px) {
-  .mobmenu {
-    width: 351px;
-    height: 100vh;
-    right: 0;
-    padding-top: 360px;
-  }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.171);
+    }
 
-  .mobmenu.is-open {
-    right: 0;
-  }
+    .mobmenu {
+        width: 351px;
+        height: 100vh;
+        right: 0;
+        padding-top: 360px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
 
-  .mobmenu-close-btn {
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-  }
+    .mobmenu.is-open {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .mobmenu-close-btn {
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+    }
 }

@@ -8,13 +8,7 @@
     modal: document.querySelector('[data-modal]'),
   };
 
-  try {
-    // костиль щоб не ломалось
-    refs.openModalBtn.addEventListener('click', toggleModal);
-  } catch (err) {
-    console.log(err);
-  }
-
+  refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
