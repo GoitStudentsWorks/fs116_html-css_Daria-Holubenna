@@ -11,17 +11,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   background-color: transparent;
 }
+
 .header-logo-green-harvest {
   padding: 8px 0;
 }
+
 .header-icons {
   display: flex;
   align-items: center;
   gap: 4px;
 }
+
 .header-icons-logo,
 .header-logo-green,
 .header-icon-burger-menu {
@@ -58,15 +60,18 @@
     width: 20px;
     height: 20px;
   }
+
   .header-logo-green {
     width: 188px;
     height: 17px;
   }
+
   .header-icon-burger-menu {
     width: 40px;
     height: 40px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .header-btn {
     display: none;
@@ -75,15 +80,18 @@
   .header-logo-green-harvest {
     padding: 16px 0;
   }
+
   .header-nav {
     display: flex;
     align-items: center;
   }
+
   .header-list {
     display: flex;
     gap: 8px;
     margin-right: 20px;
   }
+
   .header-link {
     font-size: 16px;
     line-height: 1.25;
