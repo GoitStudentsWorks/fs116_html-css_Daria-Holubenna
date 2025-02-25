@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
 }
+
 .how-work-img {
   background-color: #7a3145;
   padding: 40px 20px;
   width: 375px;
 }
+
 .how-img {
   border-radius: 30px;
 }
@@ -19,6 +21,7 @@
 
   width: 375px;
 }
+
 .how-work-title {
   width: 335px;
   font-weight: 600;
@@ -29,9 +32,11 @@
   color: #fbfbfb;
   margin-bottom: 20px;
 }
+
 .how-title-span {
   color: #d4bfc4;
 }
+
 .how-work-text {
   width: 335px;
 
@@ -41,6 +46,7 @@
   color: #fbfbfb;
   margin-bottom: 40px;
 }
+
 .how-work-list {
   display: flex;
   flex-direction: column;
@@ -50,6 +56,7 @@
 
   counter-reset: step-counter;
 }
+
 .how-work-item {
   font-size: 14px;
   line-height: 1.43;
@@ -65,9 +72,11 @@
   counter-increment: step-counter;
   position: relative;
 }
+
 .how-work-item:nth-child(2) {
   padding: 18px 27px 18px 100px;
 }
+
 .how-work-item::before {
   content: counter(step-counter) '';
   position: absolute;
@@ -87,6 +96,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .how-item-span {
   font-weight: 700;
   color: #141414;
@@ -115,6 +125,7 @@
     max-width: 768px;
     margin: 0 auto;
   }
+
   .how-work-img {
     width: 768px;
     padding: 100px 64px;
@@ -124,43 +135,59 @@
     padding: 100px 164px;
     width: 768px;
   }
+
   .how-work-title {
     width: 440px;
     font-size: 32px;
     margin-bottom: 24px;
   }
+
   .how-work-text {
     width: 440px;
     line-height: 1.25;
     font-size: 16px;
     margin-bottom: 52px;
   }
+
   .how-work-list {
     gap: 24px;
   }
+
   .how-work-item {
     line-height: 1.25;
     font-size: 16px;
     padding: 18px 15px 18px 100px;
   }
+
   .how-work-item:nth-child(2) {
     padding: 28px 17px 28px 100px;
   }
 }
+
+
 @media only screen and (min-width: 1280px) {
+  .how-work {
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
+  }
+
   .how-work-container {
     flex-direction: row;
     max-width: 1280px;
     margin: 0 auto;
   }
+
   .how-work-img {
     width: 640px;
     padding: 100px;
+    background-color: none;
   }
+
   .how-work-wrap {
     padding: 100px;
     width: 640px;
+    background-color: none;
   }
+
   .how-work-text {
     margin-bottom: 104px;
   }
