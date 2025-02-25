@@ -1,140 +1,165 @@
-.backdrop {
+.modal-overlay {
     position: fixed;
-    top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    z-index: 10;
-}
-
-.modal {
-    position: fixed;
     top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #576f35;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 296px;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     z-index: 999;
+    background-color: rgba(20, 20, 20, 0.4);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal.is-open {
-    display: flex;
+.modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
 }
 
-.mobmenu-close-btn {
+.modal {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    background: transparent;
-    border: none;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #576f35;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.mobmenu-close-icon {
-stroke: #fbfbfb;
-}
-
-.mobmenu-list {
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    z-index: 999;
+
 }
 
+.modal-overlay:not(.is-open) .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+}
 
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 118px;
+    gap: 24px;
+}
 
-.mobmenu-link {
-   background: transparent;
+.nav-link {
+    text-align: center;
     color: #fbfbfb;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
     width: 118px;
     height: 44px;
-    display: flex;
-    font-size: 14px;
-    line-height: 1.43;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    border: 1px solid #fbfbfb;
-}
-
-.mobmenu-link:hover,
-.mobmenu-link:focus,
-.mobmenu-link.active {
-    background-color: #fbfbfb;
-    color: #7a3145;
+    background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobmenu-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-     position: absolute;
-    bottom: 52px;
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+    border: none;
 }
 
-.mmf-btn {
+.btn-link {
+    font-size: 14px;
+    line-height: 143%;
+}
+
+.shop-btn {
     background-color: #7a3145;
-    color: #fbfbfb;
-    border: none;
-    padding: 16px 41px;
     border-radius: 30px;
+    width: 175px;
+    height: 52px;
+
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.11;
+    line-height: 111%;
     letter-spacing: -0.01em;
-   }
+    color: #fbfbfb;
+    border: none;
+    padding: 0;
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 
-.mmf-btn:hover,
-.mmf-btn:focus {
-    background-color: #fbfbfb;
-    color: #7a3145;
-    border: 2px solid #7a3145;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 768px) {
-    .overlay {
-        position: absolute;
+.shop-btn:hover,
+.shop-btn:focus {
+    background-color: #fbfbfb;
+    color: #7a3145;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.close-icon {
+    stroke: #fbfbfb;
+    width: 32px;
+    height: 32px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        left: 100%;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.171);
-    }
-
-    .mobmenu {
         width: 351px;
-        height: 100vh;
-        right: 0;
-        padding-top: 360px;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
-    .mobmenu.is-open {
-        right: 0;
-        transform: translateX(0);
+    .modal-overlay:not(.is-open) .modal {
+        transform: translateX(-100%);
     }
 
-    .mobmenu-close-btn {
+    .close-icon {
         width: 40px;
         height: 40px;
-        top: 20px;
-        right: 20px;
+    }
+
+    .close-btn {
+        flex-shrink: 1;
+        top: 32px;
+        right: 32px;
+    }
+
+    .nav-link {
+        width: 123px;
+    }
+
+    .nav-bar {
+        max-width: 123px;
+    }
+
+    .shop-btn {
+        bottom: 48px;
+        max-width: 157px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .modal-overlay {
+        display: none;
     }
 }

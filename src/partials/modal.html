@@ -1,26 +1,24 @@
-<div class="backdrop">
-  <div class="overlay"></div>
-  <div class="modal" data-modal>
-    <button class="mobmenu-close-btn" data-modal-close type="button">
-      <svg class="mobmenu-close-icon" width="32" height="32">
+<div class="modal-overlay" data-modal>
+  <div class="modal">
+    <button class="close-btn" data-modal-close>
+      <svg class="close-icon" wight="16" height="16">
         <use href="/img/icons.svg#exit"></use>
       </svg>
     </button>
-    <nav>
-      <ul class="mobmenu-list">
-        <li class="mobmenu-item">
-          <a class="mobmenu-link" href="#howitworks">How It Works</a>
-        </li>
-        <li class="mobmenu-item">
-          <a class="mobmenu-link" href="#vegetables">Vegetables</a>
-        </li>
-        <li class="mobmenu-item">
-          <a class="mobmenu-link" href="#reviews">Reviews</a>
-        </li>
-      </ul>
+
+    <nav class="nav-bar">
+      <button type="button" class="nav-link" data-modal-close>
+        <a class="btn-link" href="#howitworks">How It Works</a>
+      </button>
+      <button type="button" class="nav-link" data-modal-close>
+        <a class="btn-link" href="#vegetables">Vegetables</a>
+      </button>
+      <button type="button" class="nav-link" data-modal-close>
+        <a class="btn-link" href="#reviews">Reviews</a>
+      </button>
     </nav>
-    <div class="mobmenu-footer">
-      <button class="mmf-btn" type="button">SHOP NOW</button>
-    </div>
+    <button class="shop-btn" type="button" data-modal-close>
+      <a href="#order">SHOP NOW</a>
+    </button>
   </div>
 </div>
