@@ -16,6 +16,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -53,6 +57,13 @@ main {
   .section {
     padding: 100px 0;
   }
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
 }
 
 .visually-hidden {
