@@ -36,16 +36,18 @@
               name="user-email"
               id="user-email"
               placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
               required
           /></label>
-          <label for="user-comments" class="order-form-label"> </label>
-          <textarea
-            name="user-comments"
-            id="user-comments"
-            class="order-form-textarea"
-            placeholder="Comment"
-          ></textarea>
+          <label for="user-comments" class="order-form-label">
+            <textarea
+              name="user-comments"
+              id="user-comments"
+              class="order-form-textarea"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+
           <button type="submit" class="order-form-btn">Send</button>
         </form>
       </div>
