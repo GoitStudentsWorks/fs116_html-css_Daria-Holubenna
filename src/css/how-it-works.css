@@ -1,3 +1,6 @@
+.how-work {
+  background: linear-gradient(to bottom, #7a3145 532px, #576f35 530px);
+}
 .how-work-container {
   padding: 0;
   display: flex;
@@ -5,7 +8,6 @@
 }
 
 .how-work-img {
-  background-color: #7a3145;
   padding: 40px 20px;
   width: 375px;
 }
@@ -15,7 +17,6 @@
 }
 
 .how-work-wrap {
-  background-color: #576f35;
   padding: 80px 20px;
   width: 375px;
 }
@@ -110,6 +111,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .how-work {
+    background: linear-gradient(to bottom, #7a3145 840px, #576f35 840px);
+  }
   .how-work-container {
     max-width: 768px;
     margin: 0 auto;
