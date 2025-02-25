@@ -96,7 +96,7 @@
             content: '/';
             font-size: 14px;
             color: #D4BFC4;
-            padding-left: 12px;
+            padding-left: 8px;
         
 }
 @media screen and (min-width: 768px) {
@@ -182,4 +182,11 @@
     .footer-policy-list {
         gap: 12px;
     }
+        .footer-policy-item.is-cureent::after {
+            content: '/';
+            font-size: 14px;
+            color: #D4BFC4;
+            padding-left: 12px;
+    
+        }
 }
